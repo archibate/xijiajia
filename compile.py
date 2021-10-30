@@ -32,15 +32,20 @@ def res():
 ident = ''
 instring = ''
 for c in args.input.read():
-    if c == '"' or c == "'":
-        instring = c
-    if instring and c != instring:
-        args.output.write(c)
-        continue
+    if instring:
+        if c != instring:
+            args.output.write(c)
+            continue
+        else:
+            instring = ''
+            args.output.write(c)
+            continue
     if c.isidentifier():
         ident += c
     else:
         if ident:
             args.output.write(res.get(ident, ident))
             ident = ''
+        if c == '"' or c == "'":
+            instring = c
         args.output.write(c)
