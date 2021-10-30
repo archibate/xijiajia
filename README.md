@@ -15,14 +15,14 @@
 
 ## 习佳佳 -> C++
 
-将习佳佳语言的源文件 `你好.习佳佳` 转换为 C++：
+将习佳佳语言的源文件 `hello.xjj` 转换为 C++：
 ```bash
-./compile.py 你好.习佳佳 -o hello.cpp
+./compile.py hello.xjj -o hello.cpp
 ```
 
 ## C++ -> 习佳佳
 
 将 C++ 源文件 `hello.cpp` 转换为习佳佳语言：
 ```bash
-./compile.py -d hello.cpp -o 你好.习佳佳
+./compile.py -d hello.cpp -o hello.xjj
 ```

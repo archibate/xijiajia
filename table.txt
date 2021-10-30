@@ -1,4 +1,4 @@
-整数 int
+整型 int
 字符 char
 短的 short
 长的 long
@@ -94,6 +94,7 @@
 打断 break
 执行 do
 当满足 while
+循环 for
 使用 using
 名字空间 namespace
 获取类型 decltype
