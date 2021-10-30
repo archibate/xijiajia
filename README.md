@@ -41,10 +41,10 @@ Windows 用户请注意将编辑器（IDE）切换到 UTF-8 编码格式，方�
 
 将习佳佳语言的源文件 `hello.xjj` 转换为 C++：
 ```bash
-./compile.py hello.xjj -o hello.cpp
+python compile.py hello.xjj -o hello.cpp
 ```
 
 将 C++ 源文件 `hello.cpp` 转换为习佳佳语言：
 ```bash
-./compile.py -d hello.cpp -o hello.xjj
+python compile.py -d hello.cpp -o hello.xjj
 ```

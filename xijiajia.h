@@ -21,14 +21,18 @@
 #define 堆栈 stack
 #define 队列 queue
 #define 一对 pair
-#define 制作一对 make_pair
 #define 元组 tuple
 #define 制作元组 make_tuple
 #define 多选组 variant
+#define 多选组具有 holds_alternative
+#define 获取 get
 #define 可选项 optional
 #define 制作可选项 make_optional
 #define 可选项为空 nullopt
+#define 具有值 has_value
+#define 值 value
 #define 任意 any
+#define 任意转换 any_cast
 #define 集合 set
 #define 字典 map
 #define 无序集合 unordered_set
@@ -39,6 +43,7 @@
 #define 结束 end
 #define 大小 size
 #define 调整大小 resize
+#define 清空 clear
 #define 数据 data
 #define 定义 define
 #define 包含 include
@@ -47,6 +52,10 @@
 #define 位于 at
 #define 寻找 find
 #define 变换 transform
+#define 拷贝 copy
+#define 引用 ref
+#define 常值引用 cref
+#define 作为常值 as_const
 #define 含有 contains
 #define 插入 insert
 #define 构造 emplace
@@ -105,6 +114,8 @@
 #define 获取类型 decltype
 #define 自动 auto
 #define 常值 const
+#define 易逝的 volatile
+#define 可变的 mutable
 #define 标准输入流 cin
 #define 标准输出流 cout
 #define 错误输出流 cerr
