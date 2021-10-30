@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 
+
 import argparse
+import sys
 
 ap = argparse.ArgumentParser()
-ap.add_argument('--en2cn', action='store_true', default=False)
+ap.add_argument('--en2cn', '-d', action='store_true', default=False)
+ap.add_argument('--output', '-o', type=argparse.FileType('w'), default=sys.stdout)
 ap.add_argument('input', type=argparse.FileType('r'))
-ap.add_argument('output', type=argparse.FileType('w'))
 args = ap.parse_args()
+
 
 @eval('lambda x: x()')
 def res():
