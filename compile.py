@@ -3,6 +3,7 @@
 
 import argparse
 import sys
+import os
 
 ap = argparse.ArgumentParser()
 ap.add_argument('--en2cn', '-d', action='store_true', default=False)
@@ -13,7 +14,8 @@ args = ap.parse_args()
 
 @eval('lambda x: x()')
 def res():
-    with open('table.txt') as f:
+    curr_path = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(curr_path, 'table.txt')) as f:
         res = {}
         for x in f.readlines():
             try:
