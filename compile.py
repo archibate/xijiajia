@@ -15,11 +15,11 @@ args = ap.parse_args()
 @eval('lambda x: x()')
 def res():
     curr_path = os.path.dirname(os.path.abspath(__file__))
-    with open(os.path.join(curr_path, 'table.txt')) as f:
+    with open(os.path.join(curr_path, 'table.h')) as f:
         res = {}
         for x in f.readlines():
             try:
-                cn, en = x.split()
+                _, cn, en = x.split()
             except ValueError:
                 pass
             if args.en2cn:
