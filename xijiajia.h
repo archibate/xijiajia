@@ -121,3 +121,9 @@
 #define 错误输出流 cerr
 #define 行结束符 endl
 #define 返回 return
+#define （ (
+#define ） )
+#define ， ,
+#define ； ;
+#define ： :
+#define ？ ?
